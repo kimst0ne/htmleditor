@@ -1,6 +1,6 @@
 var timeout1;
 console.log('start');
-window.onblur=function(){timeout1=setTimeout('gogo()',598765);console.log('blur');};
+window.onblur=function(){timeout1=setTimeout('gogo()',5987);console.log('blur');};
 window.onfocus=function(){console.log(timeout1); clearTimeout(timeout1); console.log('focus');};
 function gogo()
 {
