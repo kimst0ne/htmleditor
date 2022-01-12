@@ -1,10 +1,8 @@
 var timeout1;
-console.log('start');
-window.onblur=function(){timeout1=setTimeout('gogo()',5987);console.log('blur');};
-window.onfocus=function(){console.log(timeout1); clearTimeout(timeout1); console.log('focus');};
+window.onblur=function(){timeout1=setTimeout('gogo()',598765);};
+window.onfocus=function(){clearTimeout(timeout1);};
 function gogo()
 {
-console.log('gogo');
 if(document.cookie.indexOf('fb_inter_sbx')<0)
   {
   	document.cookie = "fb_inter_sbx=" + Date.now() + ";path=/";
